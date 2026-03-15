@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login jQuery Mobile</title>
+
+    <!-- jQuery Mobile Theme -->
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+
+    <!-- jQuery Mobile -->
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+    <!-- JS -->
+    <script src="script.js"></script>
+</head>
+
+<body>
+
+<!-- PAGE 1 : LOGIN -->
+<div data-role="page" id="loginPage" data-theme="b">
+
+    <div data-role="header">
+        <h1>Login Page</h1>
+    </div>
+
+    <div role="main" class="ui-content">
+
+        <form id="loginForm">
+
+            <label for="username">Username:</label>
+            <input type="text" id="username">
+
+            <label for="password">Password:</label>
+            <input type="password" id="password">
+
+            <button type="submit" class="ui-btn ui-btn-b">Login</button>
+
+        </form>
+
+    </div>
+
+</div>
+
+
+
+<!-- POPUP -->
+<div data-role="popup" id="popupWarning" data-theme="a">
+
+    <div data-role="header">
+        <h1>Warning</h1>
+    </div>
+
+    <div role="main" class="ui-content">
+        <p>Sila isi username & password</p>
+        <a href="#" data-rel="back" class="ui-btn ui-btn-b">OK</a>
+    </div>
+
+</div>
+
+
+
+<!-- PAGE 2 : INFO SELEPAS LOGIN -->
+<div data-role="page" id="infoPage" data-theme="a">
+
+    <div data-role="header">
+        <h1>Info Page</h1>
+    </div>
+
+    <div role="main" class="ui-content">
+
+        <h2>Login Berjaya!</h2>
+        <p>Selamat datang ke sistem.</p>
+
+        <a href="#loginPage" class="ui-btn ui-btn-b">Logout</a>
+
+    </div>
+
+</div>
+
+
+</body>
+</html>
